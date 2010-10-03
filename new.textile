@@ -1,4 +1,0 @@
-{% include headblk1 %}New Projects{% include headblk2 %}
-<h3>New Projects</h3>
-Besides normal computer programs, I also write Android apps.
-{% include foot %}
