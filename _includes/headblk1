@@ -1,13 +1,6 @@
 <html>
 <head>
 <script type="text/javascript" src="jquery-1.5.min.js"></script>
-<script type="text/javascript">
-$("#sidebar a").mouseenter(function(e) {
-	$("#" + $(e.src).data("desc-id")).show();
-}).mouseout(function(e) {
-	$("#" + $(e.src).data("desc-id")).show();
-});
-</script>
 <style>
 #sidebar {
 	float: left;
