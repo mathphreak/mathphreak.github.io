@@ -4,7 +4,7 @@ $(function() {
 	$("#sidebar a").mouseenter(function(e) {
 		$("#" + $(e.srcElement).data("desc-id")).show();
 	}).mouseout(function(e) {
-		$("#" + $(e.srcElement).data("desc-id")).show();
+		$("#" + $(e.srcElement).data("desc-id")).hide();
 	});
 });
 </script>
