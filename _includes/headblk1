@@ -1,3 +1,20 @@
 <html>
 <head>
+<script type="text/javascript" src="jquery-1.5.min.js" />
+<script type="text/javascript">
+$("#sidebar a").mouseenter(function(e) {
+	$("#" + $(e.src).data("desc-id")).show();
+}).mouseout(function(e) {
+	$("#" + $(e.src).data("desc-id")).show();
+});
+</script>
+<style>
+#sidebar {
+	float: left;
+}
+
+#desc0, #desc1, #desc2, #desc3, #desc4, #desc5 {
+	display: none;
+}
+</style>
 <title>

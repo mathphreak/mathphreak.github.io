@@ -2,13 +2,15 @@
 </head>
 <body>
 <h3>mathphreak</h3>
-<div style="float:left">
+<div id="sidebar">
 <p>My (Presentable) Projects:</p>
 <ul>
-<li><a href="http://acts202.sourceforge.net">Acts 20:2</a></li>
-<li><a href="http://sourceforge.net/projects/genericnuisance">Generic Nuisance</a></li>
-<li><a href="http://github.com/mathphreak/BigThing">Big Thing</a></li>
-<li><a href="http://github.com/mathphreak/MYGP">MYGP</a></li>
+<li><a href="http://mathphreak.github.com/Huey-s-Apprentice" data-desc-id="desc0">Huey's Apprentice</a><span id="desc0">, a text-based interactive fiction game.</span></li>
+<li><a href="http://github.com/mathphreak/Arduinochet" data-desc-id="desc1">Arduinochet</a><span id="desc1">, an Arduino-controlled trebuchet.</span></li>
+<li><a href="http://acts202.sourceforge.net" data-desc-id="desc2">Acts 20:2</a><span id="desc2">, a Bible verse popup program.</span></li>
+<li><a href="http://sourceforge.net/projects/genericnuisance" data-desc-id="desc3">Generic Nuisance</a><span id="desc3">, a periodic popup program.</span></li>
+<li><a href="http://github.com/mathphreak/BigThing" data-desc-id="desc4">Big Thing</a><span id="desc4">, an Android app I find hard to explain.</span></li>
+<li><a href="http://github.com/mathphreak/MYGP" data-desc-id="desc5">MYGP</a><span id="desc5">, an IB MYP grading program.</span></li>
 <li><a href="/new.html">Whavever you ask for</a></li>
 </ul>
 </div>
