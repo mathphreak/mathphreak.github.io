@@ -6,7 +6,7 @@ $(function() {
 	}).mouseout(function(e) {
 		$("#" + $(e.src).data("desc-id")).show();
 	});
-}
+});
 </script>
 </head>
 <body>
