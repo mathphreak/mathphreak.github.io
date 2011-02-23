@@ -6,6 +6,9 @@ $(function() {
 	}).mouseout(function(e) {
 		$("#" + $(e.srcElement).data("desc-id")).slideUp();
 	});
+	$("dd").show();
+	$("#sidebar").width($("#sidebar").width());
+	$("dd").hide();
 });
 </script>
 </head>
