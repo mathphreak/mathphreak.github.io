@@ -25,6 +25,7 @@ $(function() {
 <dd id="desc4">An Android app I find hard to explain.</dd>
 <dt><a href="http://github.com/mathphreak/MYGP" data-desc-id="desc5">MYGP</a></dt>
 <dd id="desc5">An IB MYP grading program.</dd>
-<dt><a href="/new.html">Whavever you ask for</a>
-</ul>
+<dt><a href="/new.html" data-desc-id="desc6">Whatever you ask for</a></dt>
+<dd id="desc6">(in my less-than-abundant free time.)</dd>
+</dl>
 </div>
