@@ -6,7 +6,7 @@
 	float: left;
 }
 
-#desc0, #desc1, #desc2, #desc3, #desc4, #desc5 {
+#desc0, #desc1, #desc2, #desc3, #desc4, #desc5, #desc6 {
 	display: none;
 }
 </style>
