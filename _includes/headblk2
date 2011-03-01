@@ -1,7 +1,7 @@
 </title>
 <script type="text/javascript">
 $(function() {
-	$("#sidebar a").mouseenter(function(e) {
+	$("#sidebar dt").mouseenter(function(e) {
 		$("#" + $(e.srcElement).data("desc-id")).slideDown();
 	}).mouseout(function(e) {
 		$("#" + $(e.srcElement).data("desc-id")).slideUp();
