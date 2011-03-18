@@ -16,6 +16,8 @@ $(function() {
 <div id="sidebar">
 <p>My (Presentable) Projects:</p>
 <dl>
+<dt><a href="http://mathphreak.github.com/VCRI/" data-desc-id="desc-1">VCRI</a></dt>
+<dd id="desc-1">Various Canvas Rider improvements.</dd>
 <dt><a href="http://mathphreak.github.com/Huey-s-Apprentice" data-desc-id="desc0">Huey's Apprentice</a></dt>
 <dd id="desc0">A text-based interactive fiction game.</dd>
 <dt><a href="http://github.com/mathphreak/Arduinochet" data-desc-id="desc1">Arduinochet</a></dt>
