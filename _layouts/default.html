@@ -29,6 +29,10 @@ body {
 	top: 0px;
 	border: 1px solid black;
 }
+
+ul, ol {
+	padding-left: 12px;
+}
 </style>
 <title>{{ page.title }} &lt; mathphreak</title>
 <script type="text/javascript">
@@ -40,6 +44,7 @@ $(function() {
 	});
 	$("dd").show();
 	$("#sidebar").width($("#sidebar").width());
+	$("#content").css("padding-left", 25px + $("#sidebar").width());
 	$("dd").hide();
 });
 </script>
