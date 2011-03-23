@@ -44,7 +44,7 @@ $(function() {
 	});
 	$("dd").show();
 	$("#sidebar").width($("#sidebar").width());
-	$("#content").css("padding-left", 25px + $("#sidebar").width());
+	$("#content").css("padding-left", (25 + parseInt($("#sidebar").width())) + "px");
 	$("dd").hide();
 });
 </script>
