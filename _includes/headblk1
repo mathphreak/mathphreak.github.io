@@ -1,9 +1,0 @@
-<html>
-<head>
-<script type="text/javascript" src="jquery-1.5.min.js"></script>
-<style>
-#sidebar {
-	float: left;
-}
-</style>
-<title>
