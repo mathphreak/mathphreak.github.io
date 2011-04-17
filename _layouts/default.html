@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript" src="jquery-1.5.min.js"></script>
+<script type="text/javascript" src="http://mathphreak.github.com/jquery-1.5.min.js"></script>
 <style>
 #sidebar {
 	float: left;
@@ -36,11 +36,20 @@ ul, ol {
 </style>
 <title>{{ page.title }} &lt; mathphreak</title>
 <script type="text/javascript">
+var lastTimeout;
+
 $(function() {
 	$("#sidebar dt").mouseenter(function(e) {
-		$("#" + $(e.srcElement).data("desc-id")).slideDown();
+		lastTimeout = setTimeout(function() {
+			$("#" + $(e.srcElement).data("desc-id")).slideDown("fast");
+			lastTimeout = -1;
+		}, 500);
 	}).mouseout(function(e) {
-		$("#" + $(e.srcElement).data("desc-id")).slideUp();
+		if (lastTimeout == -1) {
+			$("#" + $(e.srcElement).data("desc-id")).slideUp("fast");
+		} else {
+			clearTimeout(lastTimeout);
+		}
 	});
 	$("dd").show();
 	$("#sidebar").width($("#sidebar").width());
@@ -52,7 +61,7 @@ $(function() {
 <body>
 <div id="sidebar">
 <a href="/" id="mathphreak">I am Mathphreak.</a>
-<p>My (Presentable) Projects:</p>
+<p>My Software Projects:</p>
 <dl>
 <dt><a href="http://mathphreak.github.com/VCRI/" data-desc-id="desc-1">VCRI</a></dt>
 <dd id="desc-1">Various Canvas Rider improvements.</dd>
@@ -70,6 +79,11 @@ $(function() {
 <dd id="desc5">An IB MYP grading program.</dd>
 <dt><a href="/new.html" data-desc-id="desc6">Whatever you ask for</a></dt>
 <dd id="desc6">(in my less-than-abundant free time.)</dd>
+</dl>
+<p>My Miscellaneous Projects:</p>
+<dl>
+<dt><a href="http://www.aviary.com/artists/mathphreak/creations/awesomer_than_gossamer" data-desc-id="desc7">Awesomer than Gossamer</a>
+<dd id='desc7'>A techno-ish composition.</dd>
 </dl>
 </div>
 <div id="content">
