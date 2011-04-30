@@ -38,16 +38,18 @@ ul, ol {
 <title>{{ page.title }} &lt; mathphreak</title>
 <script type="text/javascript">
 var lastTimeout;
+var target;
 
 $(function() {
 	$("#sidebar dt").mouseenter(function(e) {
+		target = e.currentTarget;
 		lastTimeout = setTimeout(function() {
-			$("#" + $(e.srcElement).data("desc-id")).slideDown("fast");
+			$("#" + $(target).data("desc-id")).slideDown("fast");
 			lastTimeout = -1;
 		}, 500);
 	}).mouseout(function(e) {
 		if (lastTimeout == -1) {
-			$("#" + $(e.srcElement).data("desc-id")).slideUp("fast");
+			$("#" + $(e.currentTarget).data("desc-id")).slideUp("fast");
 		} else {
 			clearTimeout(lastTimeout);
 		}
@@ -64,23 +66,23 @@ $(function() {
 <a href="/" id="mathphreak">I am Mathphreak.</a>
 <p>My Software Projects:</p>
 <dl>
-<dt><a href='http://meta-tourney.sf.net/' data-desc-id='desc-2'>Meta Tourney</a></dt>
+<dt data-desc-id='desc-2'><a href='http://meta-tourney.sf.net/'>Meta Tourney</a></dt>
 <dd id='desc-2'>Web-based tournament and meta-tournament manager.</dd>
-<dt><a href="http://mathphreak.github.com/VCRI/" data-desc-id="desc-1">VCRI</a></dt>
+<dt data-desc-id="desc-1"><a href="http://mathphreak.github.com/VCRI/">VCRI</a></dt>
 <dd id="desc-1">Various Canvas Rider improvements.</dd>
-<dt><a href="http://mathphreak.github.com/Huey-s-Apprentice" data-desc-id="desc0">Huey's Apprentice</a></dt>
+<dt data-desc-id="desc0"><a href="http://mathphreak.github.com/Huey-s-Apprentice">Huey's Apprentice</a></dt>
 <dd id="desc0">A text-based interactive fiction game.</dd>
-<dt><a href="http://github.com/mathphreak/Arduinochet" data-desc-id="desc1">Arduinochet</a></dt>
+<dt data-desc-id="desc1"><a href="http://github.com/mathphreak/Arduinochet">Arduinochet</a></dt>
 <dd id="desc1">An Arduino-controlled trebuchet.</dd>
-<dt><a href="http://acts202.sourceforge.net" data-desc-id="desc2">Acts 20:2</a></dt>
+<dt data-desc-id="desc2"><a href="http://acts202.sourceforge.net">Acts 20:2</a></dt>
 <dd id="desc2">A Bible verse popup program.</dd>
-<dt><a href="http://sourceforge.net/projects/genericnuisance" data-desc-id="desc3">Generic Nuisance</a></dt>
+<dt data-desc-id="desc3"><a href="http://sourceforge.net/projects/genericnuisance">Generic Nuisance</a></dt>
 <dd id="desc3">A periodic popup program.</dd>
-<dt><a href="http://github.com/mathphreak/BigThing" data-desc-id="desc4">Big Thing</a></dt>
+<dt data-desc-id="desc4"><a href="http://github.com/mathphreak/BigThing">Big Thing</a></dt>
 <dd id="desc4">An Android app I find hard to explain.</dd>
-<dt><a href="http://github.com/mathphreak/MYGP" data-desc-id="desc5">MYGP</a></dt>
+<dt data-desc-id="desc5"><a href="http://github.com/mathphreak/MYGP">MYGP</a></dt>
 <dd id="desc5">An IB MYP grading program.</dd>
-<dt><a href="/new.html" data-desc-id="desc6">Whatever you ask for</a></dt>
+<dt data-desc-id="desc6"><a href="/new.html">Whatever you ask for</a></dt>
 <dd id="desc6">(in my less-than-abundant free time.)</dd>
 </dl>
 <p>My Miscellaneous Projects:</p>
