@@ -38,16 +38,18 @@ ul, ol {
 <title>{{ page.title }} &lt; mathphreak</title>
 <script type="text/javascript">
 var lastTimeout;
+var target;
 
 $(function() {
 	$("#sidebar dt").mouseenter(function(e) {
+		target = e.currentTarget;
 		lastTimeout = setTimeout(function() {
-			$("#" + $(e.srcElement).data("desc-id")).slideDown("fast");
+			$("#" + $(target).data("desc-id")).slideDown("fast");
 			lastTimeout = -1;
 		}, 500);
 	}).mouseout(function(e) {
 		if (lastTimeout == -1) {
-			$("#" + $(e.srcElement).data("desc-id")).slideUp("fast");
+			$("#" + $(e.currentTarget).data("desc-id")).slideUp("fast");
 		} else {
 			clearTimeout(lastTimeout);
 		}
