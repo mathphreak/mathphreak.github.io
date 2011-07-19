@@ -115,8 +115,8 @@ $(function() {
 </dl>
 </div>
 <div id="content">
-<h2>{{ page.songtitle }}</h2>
-<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+	<h2>{{ page.songtitle }}</h2>
+	<div id="jquery_jplayer_1" class="jp-jplayer"></div>
 	<div class="jp-audio">
 		<div class="jp-type-single">
 			<div id="jp_interface_1" class="jp-interface">
@@ -143,10 +143,9 @@ $(function() {
 		<li>{{ page.songtitle }}</li>
 		</ul>
 	</div>
-</div>
-{{ content }}
-<hr />
-<p>I don't recommend downloading this song from where I created it, as it won't have critical metadata like song titles.  Download it <a href="{{ page.file }}.mp3">from here</a> instead to make sure you get the metadata.
+	{{ content }}
+	<hr />
+	<p>I don't recommend downloading this song from where I created it, as it won't have critical metadata like song titles.  Download it <a href="{{ page.file }}.mp3">from here</a> instead to make sure you get the metadata.</p>
 </div>
 <footer>
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Sound" property="dct:title" rel="dct:type">{{ page.songtitle }}</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://mathphreak.github.com" property="cc:attributionName" rel="cc:attributionURL">mathphreak</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="{{ page.file }}.mp3" rel="dct:source">{{ page.file }}.mp3</a>.
