@@ -128,20 +128,22 @@ $(function() {
 					<li><a href="#" class="jp-unmute" tabindex="1">unmute</a></li>
 				</ul>
 				<div class="jp-progress">
-				<div class="jp-seek-bar">
-				<div class="jp-play-bar"></div>
+					<div class="jp-seek-bar">
+						<div class="jp-play-bar"></div>
+					</div>
+				</div>
+				<div class="jp-volume-bar">
+					<div class="jp-volume-bar-value"></div>
+				</div>
+				<div class="jp-current-time"></div>
+				<div class="jp-duration"></div>
+			</div>
+			<div id="jp_playlist_1" class="jp-playlist">
+				<ul>
+				<li>{{ page.songtitle }}</li>
+				</ul>
 			</div>
 		</div>
-		<div class="jp-volume-bar">
-			<div class="jp-volume-bar-value"></div>
-		</div>
-		<div class="jp-current-time"></div>
-		<div class="jp-duration"></div>
-	</div>
-	<div id="jp_playlist_1" class="jp-playlist">
-		<ul>
-		<li>{{ page.songtitle }}</li>
-		</ul>
 	</div>
 	{{ content }}
 	<hr />
