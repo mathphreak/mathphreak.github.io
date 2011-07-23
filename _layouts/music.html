@@ -71,13 +71,12 @@ $(function() {
 	$("#jquery_jplayer_1").jPlayer({
 		ready: function () {
 		  $(this).jPlayer("setMedia", {
-			m4a: "{{ page.file }}.m4a",
 			mp3: "{{ page.file }}.mp3",
 			oga: "{{ page.file }}.ogg"
 		  });
 		},
 		swfPath: "/jplayer",
-		supplied: "m4a, mp3, oga"
+		supplied: "mp3, oga"
 	});
 });
 </script>
