@@ -1,0 +1,33 @@
+﻿#sidebar {
+	float: left;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: blue;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+body {
+	font-family: Helvetica, Georgia, sans-serif;
+}
+
+#content {
+	padding-left: 25px;
+}
+
+#mathphreak {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	border: 1px solid black;
+	background-color: white;
+	font-family: OrbitronBlack;
+}
+
+ul, ol {
+	padding-left: 12px;
+}
