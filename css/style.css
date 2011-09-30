@@ -20,12 +20,10 @@ body {
 }
 
 #mathphreak {
-	position: fixed;
-	left: 0px;
-	top: 0px;
 	border: 1px solid black;
 	background-color: white;
 	font-family: OrbitronBlack;
+	color: black;
 }
 
 ul, ol {
