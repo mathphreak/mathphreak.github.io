@@ -12,8 +12,8 @@ body {
 }
 
 #mathphreak {
-	border: 1px solid black;
 	background-color: white;
 	font-family: OrbitronBlack;
 	color: black;
+	width: 140px;
 }
