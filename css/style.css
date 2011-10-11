@@ -3,6 +3,14 @@
 	color: blue;
 }
 
+a:visited {
+	color: purple;
+}
+
+#sidebar a:visited {
+	color: blue;
+}
+
 a:hover {
 	text-decoration: underline;
 }
@@ -13,7 +21,28 @@ body {
 
 #mathphreak {
 	background-color: white;
-	font-family: OrbitronBlack;
 	color: black;
-	width: 140px;
+}
+
+.orbitron {
+	font-family: OrbitronMedium;
+}
+
+div.chunk {
+	background-color: #CCC;
+	color: black;
+	padding: 15px;
+	border-radius: 15px;
+}
+
+div.chunk.grid_4 {
+	width: 270px;
+}
+
+div.chunk.grid_6 {
+	width: 430px;
+}
+
+.visuallybold {
+	font-weight: bold;
 }

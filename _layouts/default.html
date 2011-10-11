@@ -4,7 +4,10 @@
 <link rel="stylesheet" href="/css/reset.css">
 <link rel="stylesheet" href="/css/text.css">
 <link rel="stylesheet" href="/css/960.css">
-<script type="text/javascript" src="/js/jquery-1.5.min.js"></script>
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/underscore.js"></script>
+<script type="text/javascript" src="/js/backbone.js"></script>
+<script type="text/javascript" src="/js/spin.js"></script>
 <link rel="stylesheet" href="/css/orbitron/style.css">
 <link rel="stylesheet" href="/css/style.css">
 <script type="text/javascript" src="/js/script.js"></script>
@@ -12,12 +15,13 @@
 </head>
 <body>
 <div class='container_12'>
-	<a class="grid_2" href="/" id='mathphreak'>mathphreak</a>
+	<a class="grid_2" href="/" id='mathphreak'><img src="/mathphreak{% if page.title == null %} large{% endif %}.png"></a>
 	<div class='clear'></div>
 	<div id="sidebar" class='grid_2'>
 		<a href="/software">Software</a><br />
 		<a href="http://mathphreak.bandcamp.com">Music</a><br />
-		<a href="/reviews">Reviews</a>
+		<a href="/reviews">Reviews</a><br />
+		<a href="/misc">Other Stuff</a>
 	</div> <!-- sidebar -->
 	<div id="content" class='grid_10'>
 		{{ content }}
