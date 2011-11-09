@@ -1,18 +1,78 @@
-function loadRepoDetails(repo, callback) {
-	$.ajax("https://api.github.com/repos/" + repo, {
-		dataType: "json",
-		success: function(data, txtStatus, jqXHR) {
-			callback(repo, data.pushed_at, data.description);
-		},
-		error: function(jqXHR) {
-			console.log("ERROR loading github stuff");
+/*jshint forin:true, noarg:true, noempty:true, bitwise:true, undef:true, browser:true, devel:true, jquery:true, indent:4, maxerr:50 */
+
+function parseGH(json) {
+	if (json === null) {
+		window.parseGH = parseGH;
+		return;
+	}
+	var pushedDate = json.data.pushed_at;
+	var createdDate = json.data.created_at;
+	window.callbackGH({
+		name: json.data.owner.login + "/" + json.data.name,
+		date: parseISO8601(!pushedDate ? createdDate : pushedDate)
+	});
+}
+
+function parseSF(json, callback) {
+	var contents = json.contents;
+	contents = contents.substr(contents.indexOf("<!doctype html>") + "<!doctype html>".length);
+	contents = contents.replace(/<!--[\s\S]*?-->/g, "");
+	var jq = $(contents);
+	// CAUTION: the following code WILL BREAK!!!
+	var target = jq.find("#project-primary");
+	target = target.find(".project-block:nth-child(2)");
+	target = target.find(".project-info:nth-child(2)");
+	target = target.find("section.content");
+	target = target.find("p");
+	if (target.length === 0 && !window.toldAboutSFBroken) {
+		alert("SourceForge grabbing is broken, tell mathphreak@gmail.com");
+		window.toldAboutSFBroken = true;
+	}
+	var date = target.text();
+	var split = date.split("-");
+	var _date = new Date;
+	_date.setUTCFullYear(Number(split[0]));
+	_date.setUTCMonth(Number(split[1]) - 1);
+	_date.setUTCDate(Number(split[2]));
+	callback(_date);
+}
+
+function loadFromSourceforge(repo) {
+	xhr.request({
+		url: "ba-simple-proxy.php?native=true&url=http://sourceforge.net/projects/" + repo + "/",
+		method: "GET"
+	}, function(response) {
+		parseSF(JSON.parse(response.data), function(date) {
+			window.callbackSF({
+				name: repo,
+				date: date
+			});
+		});
+	});
+}
+
+function prepSF() {
+	window.xhr = new easyXDM.Rpc({
+		remote: "http://juniorgeek.users.sourceforge.net/cors.html"
+	}, {
+		remote: {
+			request: {} // request is exposed by /cors/
 		}
 	});
 }
 
+function loadRepoDetails(repo) {
+	$.ajax({
+		url: "https://api.github.com/repos/" + repo + "?callback=parseGH",
+		method: "GET",
+		dataType: "script"
+	});
+}
+
 function loadAllDetails(repos, callback) {
+	window.callbackGH = callback;
 	_.each(repos, function(repo) {
-		loadRepoDetails(repo, callback);
+		loadRepoDetails(repo);
 	});
 }
 
@@ -43,17 +103,26 @@ function parseISO8601(str) {
 
 function addToDetails(length, callback) {
 	var finis = _.after(length, callback);
-	return function(repo, date, desc) {
-		DETAILED_MY_REPOS.push({
-			repo: repo,
-			date: !date ? new Date(0) : parseISO8601(date),
-			desc: desc
-		});
+	return function(json) {
+		DETAILED_MY_REPOS.push(json);
 		finis();
 	}
 }
 
+function makeRepoLoader(callback) {
+	return function(obj) {
+		if (obj.indexOf("/") != -1) { // we contain a / and are therefore user/repo => GitHub
+			window.callbackGH = callback;
+			loadRepoDetails(obj);
+		} else {
+			window.callbackSF = callback;
+			loadFromSourceforge(obj);
+		}
+	};
+}
+
 function loadAllMyRepos() {
+	prepSF();
 	var opts = {
 	  lines: 8, // The number of lines to draw
 	  length: 0, // The length of each line
@@ -64,22 +133,37 @@ function loadAllMyRepos() {
 	  trail: 42, // Afterglow percentage
 	  shadow: false // Whether to render a shadow
 	};
-	var target = document.getElementById('githublist');
+	var target = document.getElementById('softwarelist');
 	var spinner = new Spinner(opts).spin(target);
-	loadAllDetails(MY_REPOS, addToDetails(MY_REPOS.length, function() {
+	var callback = makeRepoLoader(addToDetails(MY_REPOS.length, function() {
 		var sorted = _.sortBy(DETAILED_MY_REPOS, function(e) {
 			return -e.date.getTime(); // negate so that highest is first
 		});
 		_.each(sorted, function(el) {
-			$("#githublist ul").append("<li><a href='http://github.com/" + el.repo + "/' title=\"" + el.desc.replace("\"", "\\\"") + "\">" + el.repo.split("/")[1] + "</a></li>");
+			var removedDOM = $("#softwarelist a[data-name='" + el.name + "']").parent();
+			removedDOM.remove();
+			$("#softwarelist").append(removedDOM);
+			removedDOM.append(" (" + el.date.getFullYear() + ")");
 		});
 		spinner.stop();
 	}));
+	_.each(MY_REPOS, callback);
 }
+
+window.loadAllMyRepos = loadAllMyRepos;
 
 var DETAILED_MY_REPOS = [];
 
 var MY_REPOS = [
+	"meta-tourney",
+	"acts202",
+	"eplanner",
+	"genericnuisance",
+	"multijsgames",
+	"namcap",
+	"tarmac",
+	"wry-writing",
+	"yavp",
 	"mathphreak/BigThing",
 	"mathphreak/DivisorGameSim",
 	"mathphreak/MYGP",
