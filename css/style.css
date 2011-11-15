@@ -43,6 +43,10 @@ div.chunk.grid_6 {
 	width: 430px;
 }
 
+div.chunk.grid_10 {
+	width: 750px;
+}
+
 .visuallybold {
 	font-weight: bold;
 }
