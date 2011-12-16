@@ -25,8 +25,10 @@ function parseSF(json, callback) {
 	target = target.find("section.content");
 	target = target.find("p");
 	if (target.length === 0 && !window.toldAboutSFBroken) {
-		alert("SourceForge grabbing is broken, tell mathphreak@gmail.com");
+//		alert("SourceForge grabbing is broken, tell mathph****@gmail.com");
+		// I know it's broken; I don't think there's an wasy way to fix it
 		window.toldAboutSFBroken = true;
+		return;
 	}
 	var date = target.text();
 	var split = date.split("-");

@@ -39,7 +39,7 @@
 		<a href="/reviews">Reviews</a><br />
 		<a href="/misc">Other Stuff</a>
 	</div> <!-- sidebar -->
-	<div id="content" class='grid_10'>
+	<div id="content" class='grid_10{% if page.chunk %} chunk{% endif %}'>
 		{{ content }}
 	</div> <!-- content -->
 </div> <!-- container_12 -->
