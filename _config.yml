@@ -1,0 +1,12 @@
+auto: true
+server: true
+permalink: /:title/
+exclude:
+ - "website.sublime-project"
+ - "website.sublime-workspace"
+ - "package.json"
+ - "Gruntfile.coffee"
+ - "node_modules"
+include: 
+ - "feed.atom"
+url: "http://mathphreak.github.com"

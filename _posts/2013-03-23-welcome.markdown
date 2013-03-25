@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Welcome!"
+---
+Hey Internet!  How are you doing?
+
+I'm Matt.  Nice to meet you.
+
+This is my blog.  I will probably post things here only rarely.
+
+I can't think of what I should put here.  So I'll just give you a haiku.
+
+    This is a haiku
+    It was not that hard to write
+    But it's hard to read
+
+Goodbye.

@@ -1,0 +1,30 @@
+---
+title: mathphreak
+subtitle: mathphreak's blog
+site_url: http://mathphreak.github.com
+---
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>{{ page.title }}</title>
+    <subtitle>{{ page.subtitle }}</subtitle>
+    <link href="http://mathphreak.github.com/feed.atom" rel="self" />
+    <link href="http://mathphreak.github.com" />
+    <id>{{ page.site_url }}</id>
+    <updated>{{ site.time }}</updated>
+    <author>
+        <name>Matt Horn</name>
+        <email>mathphreakREMOVETHISBECAUSESPAMISEVIL@gmail.com</email>
+        <uri>http://mathphreak.github.com</uri>
+    </author>
+
+    {% for post in site.posts %}
+        <entry>
+            <id>http://mathphreak.github.com{{ post.url }}</id>
+            <title>{{ post.title }}</title>
+            <updated>{{ page.date | date: "%Y-%m-%dT%H-%M-%S%Z" }}</updated>
+            <content>{{ post.content | xml_escape }}</content>
+            <link rel="alternate" href="{{ post.url }}" />
+        </entry>
+    {% endfor %}
+</feed>

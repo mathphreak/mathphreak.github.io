@@ -1,0 +1,28 @@
+body {
+    font-family: 'Linden Hill', serif;
+}
+
+#headbar {
+    border-bottom: 1px solid gray;
+}
+
+#container {
+    width: 800px;
+    margin: 0px auto;
+}
+
+#sidebar {
+    width: 250px;
+    display: block;
+    float: left;
+}
+
+#sidebar ul {
+    margin: 0;
+}
+
+#post {
+    width: 550px;
+    display: block;
+    margin-left: 250px;
+}

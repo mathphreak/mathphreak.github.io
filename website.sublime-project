@@ -2,7 +2,9 @@
 	"folders":
 	[
 		{
-			"path": "/home/mathphreak/projects/website"
+			"path": "/home/mathphreak/projects/website",
+            "folder_exclude_patterns": ["_site", "node_modules"],
+            "file_exclude_patterns": [".gitignore", "website.sublime-*"]
 		}
 	]
 }

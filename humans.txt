@@ -3,13 +3,14 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Matt Horn -- everything -- @mathphreak
 
 # THANKS
 
-    <name>
+    Nate Kontny, for observing that just because we can't sing like the people on the radio
+    doesn't mean we can't sing (http://ninjasandrobots.com/i-cant-sing)
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    jQuery, Modernizr
+    no javascript or anything, but H5BP and a good sense of minimalism
