@@ -1,4 +1,3 @@
-Q = require "q"
 fs = require "fs"
 
 module.exports = (grunt) ->

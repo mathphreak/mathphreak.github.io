@@ -68,37 +68,10 @@
 	"buffers":
 	[
 		{
-			"file": "posts.markdown",
+			"file": "_posts/2013-04-21-my-projects.markdown",
 			"settings":
 			{
-				"buffer_size": 142,
-				"line_ending": "Unix",
-				"name": "---"
-			}
-		},
-		{
-			"file": "_posts/2013-03-23-welcome.markdown",
-			"settings":
-			{
-				"buffer_size": 72,
-				"line_ending": "Unix",
-				"name": "---"
-			}
-		},
-		{
-			"file": "Gruntfile.coffee",
-			"settings":
-			{
-				"buffer_size": 626,
-				"line_ending": "Unix",
-				"name": "module.exports = (grunt) ->"
-			}
-		},
-		{
-			"file": "_config.yml",
-			"settings":
-			{
-				"buffer_size": 232,
+				"buffer_size": 2367,
 				"line_ending": "Unix"
 			}
 		}
@@ -106,9 +79,25 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 54.0,
+		"height": 96.0,
 		"selected_items":
 		[
+			[
+				"gpush",
+				"Git: Push"
+			],
+			[
+				"gcom",
+				"Git: Commit"
+			],
+			[
+				"gadd",
+				"Git: Add Current File"
+			],
+			[
+				"gitadd",
+				"Git: Add..."
+			],
 			[
 				"ssliq",
 				"Set Syntax: HTML Liquid"
@@ -187,10 +176,14 @@
 	},
 	"file_history":
 	[
+		"/home/mathphreak/projects/website/_config.yml",
+		"/home/mathphreak/projects/website/posts.markdown",
+		"/home/mathphreak/projects/website/Gruntfile.coffee",
+		"/home/mathphreak/projects/website/index.markdown",
+		"/home/mathphreak/projects/website/_posts/2013-03-23-welcome.markdown",
 		"/home/mathphreak/projects/website/_posts/2013-03-24-testing-one-two-three.markdown",
 		"/home/mathphreak/projects/website/_posts/2013-03-24-testing-1-2-4.markdown",
 		"/home/mathphreak/projects/website/_posts/2013-03-24-testing-one-two-three",
-		"/home/mathphreak/projects/website/index.markdown",
 		"/home/mathphreak/projects/website/_posts/T22:50:49.960Z-testing-one-two-three",
 		"/home/mathphreak/projects/website/main.css",
 		"/home/mathphreak/projects/website/_layouts/default.html",
@@ -198,7 +191,6 @@
 		"/home/mathphreak/projects/website/package.json",
 		"/home/mathphreak/projects/website/_layouts/post.html",
 		"/home/mathphreak/projects/website/website.sublime-project",
-		"/home/mathphreak/projects/website/_config.yml",
 		"/home/mathphreak/projects/website/jekyll.log",
 		"/home/mathphreak/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
 		"/home/mathphreak/projects/website/humans.txt",
@@ -273,114 +265,31 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "posts.markdown",
+					"file": "_posts/2013-04-21-my-projects.markdown",
 					"settings":
 					{
-						"buffer_size": 142,
+						"buffer_size": 2367,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								32,
-								32
+								2367,
+								2367
 							]
 						],
 						"settings":
 						{
-							"auto_name": "---",
 							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "_posts/2013-03-23-welcome.markdown",
-					"settings":
-					{
-						"buffer_size": 72,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								16,
-								16
-							]
-						],
-						"settings":
-						{
-							"auto_name": "---",
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Gruntfile.coffee",
-					"settings":
-					{
-						"buffer_size": 626,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								625,
-								625
-							]
-						],
-						"settings":
-						{
-							"auto_name": "module.exports = (grunt) ->",
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "_config.yml",
-					"settings":
-					{
-						"buffer_size": 232,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								23,
-								23
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 140.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -419,6 +328,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.git":
+	{
+		"height": 118.0
+	},
 	"replace":
 	{
 		"height": 64.0

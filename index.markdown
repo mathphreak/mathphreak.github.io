@@ -4,7 +4,11 @@ layout: default
 Hi!
 ===
 I'm mathphreak, otherwise known as Matt H.  I make cool stuff (well, I *start* cool stuff; finishing is overrated).
+
 Sometimes I write [things](/posts.html), but not very often.
+{% for post in site.posts limit:1 %}
+The last thing I wrote was called [{{ post.title }}]({{ post.url }}).
+{% endfor %}
 
 stuff I'm making
 ----------------
