@@ -10,6 +10,7 @@ Hamwerk is a web-based system to keep track of homework assignments.  It's essen
 a hyper-specialized to-do list that isn't optimized for anything besides homework.
 
 It has several features I'm proud of, including:
+
  * Every assignment is tied to a class
  * See assignments per class or all at once
  * Specify due dates in a natural way
@@ -24,6 +25,7 @@ It has several features I'm proud of, including:
 
 ## Project History
 > Every good project begins by scratching a developer's personal itch.
+>
 > - Eric Raymond
 
 I began working on Hamwerk because I hadn't found a good to-do list for my homework
