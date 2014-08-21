@@ -3,30 +3,29 @@ layout: default
 ---
 Hi!
 ===
-I'm mathphreak, otherwise known as Matt H.  I make cool stuff (well, I *start* cool stuff; finishing is overrated).
+I'm Matt Horn, also known as mathphreak.  I make cool stuff.
 
-Sometimes I write [things](/posts.html), but not very often.
+Sometimes I write [things](/posts.html), but not very often.  I have an [RSS feed](/feed.atom) that you can add to
+whatever feed reader you use.
 {% for post in site.posts limit:1 %}
 The last thing I wrote was called [{{ post.title }}]({{ post.url }}).
 {% endfor %}
 
 stuff I'm making
 ----------------
-### [BecauseWhyNot](https://github.com/mathphreak/BecauseWhyNot)
-A DCPU-16 emulator/assembler/whatever.  The DCPU-16 is going to be in Notch's new game 0x10c,
-assuming he finishes it.
-
-### [CompetentDeathMessages](https://github.com/mathphreak/CompetentDeathMessages)
-Custom death messages for Bukkit (Minecraft), done competently.
+### [Hamwerk](http://hamwerk.meteor.com)
+A better homework system.
 
 stuff I've made
 ---------------
-As I was writing this section, I scrolled down my GitHub repository list, and I thought "that's crap,
-that's crap, I never even went anywhere with that...dang I feel special right now."  So I changed my
-mind, and I'll skip this section for now.  If you're really curious, you can check out my
-[github](http://github.com/mathphreak).  Technically, I make [music](http://mathphreak.bandcamp.com)
-sometimes too, but it's been a while.  I listen to way more music than I write.  By a factor of
-approximately aleph-one.
+### [BecauseWhyNot](https://github.com/mathphreak/BecauseWhyNot)
+A DCPU-16 emulator/assembler/whatever.  The DCPU-16 was the CPU in Notch's canceled 0x10c.
+
+### [CompetentDeathMessages](https://github.com/mathphreak/CompetentDeathMessages)
+Custom death messages for Bukkit (Minecraft), done competently.
+This was made for the Republica Minecraft server, which has since shut down.
+
+### [a bit of music](http://mathphreak.bandcamp.com)
 
 stuff I started but never finished so it doesn't count as being "made" but was still my responsibility
 ------------------------------------------------------------------------------------------------------
@@ -38,11 +37,4 @@ I had an idea a while back to make a game with HTML5 Canvas.  I didn't get very 
 interest and moved on to something else.  I should probably go look at that again, as it sounds way
 more feasible now.
 
-people who are awesome
-----------------------
- * **You** (since you're reading my website)
- * [Porter Robinson](http://porterrobinsonofficial.com/)
- * [Notch](http://www.mojang.com/notch/)
- * [Rob Bell](http://en.wikipedia.org/wiki/Rob_Bell)
- * [André Michelle](http://andre-michelle.com/)
- * [Nate Kontny](http://ninjasandrobots.com/)
+### [the rest of the stuff on my GitHub](http://github.com/mathphreak)
