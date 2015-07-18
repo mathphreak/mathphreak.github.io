@@ -1,12 +1,10 @@
-auto: false
-server: true
 permalink: /:title/
 exclude:
- - "website.sublime-project"
- - "website.sublime-workspace"
- - "package.json"
- - "Gruntfile.coffee"
- - "node_modules"
-include: 
+ - "Gemfile*"
+ - "CNAME"
+ - "README.md"
+include:
  - "feed.atom"
-url: "http://mathphreak.github.com"
+url: "http://code.mathphreak.me"
+safe: true
+lsi: false

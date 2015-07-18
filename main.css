@@ -1,5 +1,7 @@
 body {
-    font-family: 'Linden Hill', serif;
+    font-family: 'Noto Serif', serif;
+    font-size: 20px;
+    line-height: 130%;
 }
 
 #headbar {
@@ -7,12 +9,12 @@ body {
 }
 
 #container {
-    width: 800px;
+    max-width: 1000px;
     margin: 0px auto;
 }
 
 #sidebar {
-    width: 250px;
+    width: 30%;
     display: block;
     float: left;
 }
@@ -22,7 +24,7 @@ body {
 }
 
 #post {
-    width: 550px;
+    width: 70%;
     display: block;
-    margin-left: 250px;
+    margin-left: 30%;
 }

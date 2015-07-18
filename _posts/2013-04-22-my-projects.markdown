@@ -9,6 +9,7 @@ It's atrocious.  I haven't finished much.
 But I've started a lot.
 
 I've:
+
  * Programmed two-player Pong on my calculator
  * Built things with Swing that would have been better done in JS just because I didn't know JS yet
  * Tried to build multiplayer HTML5 games using Canvas and PHP/MySQL
@@ -22,6 +23,7 @@ I've:
  * Started trying to port my school's iOS app to Android
 
 Those things all sound useless, or at least impractical, but from each of those things I learned:
+
  * How to use TI-BASIC, which I still use today, and how to write good programs in a bad language
  * How to build everything in Swing, no matter whether or not it should be built in Swing
  * How easy Canvas is to use, and how hard PHP and MySQL are to use
@@ -36,6 +38,7 @@ Those things all sound useless, or at least impractical, but from each of those 
  * How to use JSON API endpoints from Android
 
 I was making good progress on those, but here's the current status of all of them:
+
  * Lost the calculator
  * Completely lost interest
  * Ran out of steam and just gave up
@@ -48,5 +51,5 @@ I was making good progress on those, but here's the current status of all of the
 
 I'm more talented than I appear.  Despite what my track record demonstrates, I *am* capable of finishing things.
 
-If you'd like to provide temporary employment to a 16-year-old with no formal work experience, email 
+If you'd like to provide temporary employment to a 16-year-old with no formal work experience, email
 the obvious choice @gmail.com and I can get back to you.
