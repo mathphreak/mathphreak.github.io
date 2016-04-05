@@ -14,15 +14,15 @@ Most recently, I wrote [{{ post.title }}]({{ post.url }}) in {{ post.date | date
 current projects
 ================
 
+[Relief Valve](/ReliefValve/)
+-----------------------------
+
+Moves Steam games between drives.
+
 [Galactic Max](/Galactic-Max/)
 ------------------------------
 
 An HTML5 game made with [Phaser](http://phaser.io) in 24 hours with some friends.
-
-[Relief Valve](/ReliefValve/)
------------------------------
-
-Moves Steam games between drives. Not quite ready.
 
 old projects
 ============
