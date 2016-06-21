@@ -2,7 +2,7 @@
 layout: post
 title: Introducing Hamwerk
 ---
-I've been working on [Hamwerk](http://hamwerk.meteor.com) off and on for more than
+I've been working on [Hamwerk](https://github.com/mathphreak/hamwerk) off and on for more than
 a year now, and I'm finally ready to announce it to a wider audience.
 
 ## About Hamwerk
