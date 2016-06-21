@@ -22,3 +22,6 @@ feed:
 title: Matt Horn
 collections:
   - repo_info
+author:
+  name: Matt Horn
+  uri: http://www.matthorn.tech
