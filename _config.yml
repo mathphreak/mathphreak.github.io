@@ -1,10 +1,24 @@
-permalink: /:title/
+lsi: false
+safe: true
+source: .
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+permalink: /posts/:title/
 exclude:
  - "Gemfile*"
  - "CNAME"
  - "README.md"
-include:
- - "feed.atom"
-url: "http://code.mathphreak.me"
-safe: true
-lsi: false
+ - "script/*"
+ - "vendor"
+url: "http://www.matthorn.tech"
+gems:
+  - jekyll-feed
+  - jekyll-coffeescript
+  - jekyll-paginate
+feed:
+  path: feed.atom
+title: Matt Horn
+collections:
+  - repo_info

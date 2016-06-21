@@ -1,3 +1,3 @@
     This is my website.
-    It is really quite hackish.
+    It's no longer so hackish.
     But I mean, it works.
