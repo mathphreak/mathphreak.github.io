@@ -16,6 +16,11 @@ Moves Steam games between storage locations. For some reason, this isn't built i
 
 A hackathon-winning HTML5 game made with [Phaser](http://phaser.io) in 24 hours with some friends.
 
+[halfhearted]({{ site.url }}/halfhearted/)
+--------------------------------------------
+
+A roguelike built with React for FreeCodeCamp.
+
 Abandoned non-trivial projects
 ==============================
 
