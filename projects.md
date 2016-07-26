@@ -21,6 +21,11 @@ A hackathon-winning HTML5 game made with [Phaser](http://phaser.io) in 24 hours 
 
 A roguelike built with React for FreeCodeCamp.
 
+[Adding a feature to Rust](https://github.com/rust-lang/rust/pull/34694)
+------------------------------------------------------------------------
+
+The feature itself was trivial (one of the core Rust devs was surprised it didn't exist), but participating in the process that Rust has was a cool experience.
+
 Abandoned non-trivial projects
 ==============================
 

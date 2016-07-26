@@ -13,6 +13,7 @@ exclude:
  - "script/*"
  - "vendor"
 url: "http://www.matthorn.tech"
+repository: mathphreak/mathphreak.github.io
 gems:
   - jekyll-feed
   - jekyll-coffeescript
