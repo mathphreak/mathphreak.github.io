@@ -16,6 +16,12 @@
                 <a href="/posts/" class="breadcrumb">posts</a> &gt;
                 <a href="{{ page.url }}" class="breadcrumb">{{ page.title }}</a>
             </div>
+            <div id="post">
+                <h1>{{ page.title }}</h1>
+                <div id="content">
+                    {{ content }}
+                </div>
+            </div>
             <div id="sidebar">
                 <h2>Recent Posts</h2>
                 <ul>
@@ -23,12 +29,6 @@
                         <li><a href="{{ post.url }}">{{ post.title }}</a></li>
                     {% endfor %}
                 </ul>
-            </div>
-            <div id="post">
-                <h1>{{ page.title }}</h1>
-                <div id="content">
-                    {{ content }}
-                </div>
             </div>
         </div>
     </body>

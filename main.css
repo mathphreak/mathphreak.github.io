@@ -18,18 +18,25 @@ h1, h2, h3 {
   margin: 0px auto;
 }
 
-#sidebar {
-  width: 30%;
-  display: block;
-  float: left;
-}
-
 #sidebar ul {
   margin: 0;
 }
 
-#post {
-  width: 70%;
-  display: block;
-  margin-left: 30%;
+@media (max-width: 768px) {
+  #content ul {
+    margin-left: -0.5em;
+  }
+}
+
+@media (min-width: 768px) {
+  #sidebar {
+    width: 30%;
+    display: block;
+  }
+
+  #post {
+    width: 70%;
+    display: block;
+    float: right;
+  }
 }
