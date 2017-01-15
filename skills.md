@@ -12,6 +12,7 @@ My Skills
     * with [a pure-HTML text UI](https://github.com/mathphreak/LD28-You-Only-Get-One)
     * with [a full HTML5 game engine and a team of people](https://github.com/mathphreak/Galactic-Max)
     * with [HTML and React](https://github.com/mathphreak/halfhearted)
+    * with [Elm](https://github.com/mathphreak/yummy-goodness)
   * Using Meteor to build [a specialized todo list](https://github.com/mathphreak/hamwerk) and [a realtime quiz application](https://github.com/KamikazeKumquatsLLC/komodo)
   * Making [several](https://github.com/mathphreak/Pecan.js) [different](https://github.com/mathphreak/github.js) microlibraries focused on the browser and [one](https://github.com/mathphreak/compare-ignoring-articles) for Node.js
   * Desktop app development with Electron

@@ -16,6 +16,11 @@ Moves Steam games between storage locations. For some reason, this isn't built i
 
 A hackathon-winning HTML5 game made with [Phaser](http://phaser.io) in 24 hours with some friends.
 
+[Yummy Goodness](https://mathphreak.itch.io/yummy-goodness)
+-----------------------------------------------------------
+
+The economy from CS:GO as a standalone game. My first project with [Elm](http://elm-lang.org).
+
 [halfhearted]({{ site.url }}/halfhearted/)
 --------------------------------------------
 

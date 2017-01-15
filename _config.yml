@@ -7,11 +7,12 @@ gist:
   noscript: false
 permalink: /posts/:title/
 exclude:
- - "Gemfile*"
- - "CNAME"
- - "README.md"
- - "script/*"
- - "vendor"
+  - "Gemfile*"
+  - "CNAME"
+  - "README.md"
+  - "script/*"
+  - "vendor"
+  - ".travis.yml"
 url: "http://www.matthorn.tech"
 repository: mathphreak/mathphreak.github.io
 gems:
