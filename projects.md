@@ -6,10 +6,20 @@ permalink: /projects/
 "Finished" non-trivial projects
 ===============================
 
+[MFTE](https://github.com/mathphreak/mfte)
+------------------------------------------
+
+The Magic-Free Text Editor. A Nano clone in Rust.
+
 [Relief Valve]({{ site.url }}/ReliefValve/)
 -------------------------------------------
 
-Moves Steam games between storage locations. For some reason, this isn't built in to Steam directly.
+Moves Steam games between storage locations. This was later built into Steam directly, rendering Relief Valve useless.
+
+[Adding a feature to Rust](https://github.com/rust-lang/rust/pull/34694)
+------------------------------------------------------------------------
+
+The feature itself was trivial (one of the core Rust devs was surprised it didn't exist), but participating in the process that Rust has was a cool experience.
 
 [Galactic Max]({{ site.url }}/Galactic-Max/)
 --------------------------------------------
@@ -25,11 +35,6 @@ The economy from CS:GO as a standalone game. My first project with [Elm](http://
 --------------------------------------------
 
 A roguelike built with React for FreeCodeCamp.
-
-[Adding a feature to Rust](https://github.com/rust-lang/rust/pull/34694)
-------------------------------------------------------------------------
-
-The feature itself was trivial (one of the core Rust devs was surprised it didn't exist), but participating in the process that Rust has was a cool experience.
 
 Abandoned non-trivial projects
 ==============================

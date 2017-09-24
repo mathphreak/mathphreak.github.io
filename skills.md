@@ -24,15 +24,22 @@ My Skills
   * Using Swing to make [my first open source project](https://sourceforge.net/projects/eplanner/) and then [a CSV data processor](/projects/misc/#grade-migration-helper)
   * Use of the Bukkit API, with which I made [quite](https://github.com/mathphreak/StaffDrops) [a](https://github.com/mathphreak/SpawnAndBack) [few](https://github.com/mathphreak/CompetentDeathMessages) [Minecraft](https://github.com/mathphreak/Trollcraft) [server](https://github.com/mathphreak/Fireworks) [plugins](https://github.com/mathphreak/RepublicaEternityEventIII).
   * [One Android app](https://github.com/mathphreak/RobotArmStuff) from many years ago, plus a few even more minor ones I didn't publish
+* Python
+  * Doing [image processing](https://github.com/mathphreak/hexcells_hints)
+  * Helping my friend write [a GroupMe bot](https://github.com/Boijangle/GroupMe-Message-Bot)
 * Open Source Contribution
+  * Significantly extending [a newly created library](https://github.com/mrandri19/rust-editorconfig)
   * Making a [trivial addition](https://github.com/rust-lang/rust/pull/34694) to the Rust standard library
+  * [Fixing minor test bugs](https://github.com/editorconfig/editorconfig-core-test/pull/8)
   * [Correcting grammar](https://github.com/jonobr1/two.js/pull/3) in documentation
   * Deriving [new behavior](https://github.com/honestbleeps/Reddit-Enhancement-Suite/pull/826) trivially from existing features
+  * [Updating outdated and broken dependencies](https://github.com/aweinstock314/rust-clipboard/pull/43)
   * Adding new features to [a Minecraft server plugin](https://github.com/Multiverse/Multiverse-Core/pull/780) and [a Node.js library](https://github.com/joaomoreno/gulp-atom-electron/pull/28) [(twice)](https://github.com/joaomoreno/gulp-atom-electron/pull/29)
 * Ruby
-  * [Webapp development with Rails](https://github.com/mathphreak/E-800)
+  * Webapp development with [Rails](https://github.com/mathphreak/E-800) and [Sinatra](https://github.com/mathphreak/cull21)
   * [Utility development with just Ruby](https://github.com/mathphreak/prodenfd)
 * Rust
+  * [Text editor development](https://github.com/mathphreak/mfte)
   * [Webapp development](https://github.com/mathphreak/cs-eco-dash)
   * [Standard library contribution](https://github.com/rust-lang/rust/pull/34694)
 * Go

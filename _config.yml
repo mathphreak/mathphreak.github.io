@@ -15,7 +15,7 @@ exclude:
   - ".travis.yml"
 url: "http://www.matthorn.tech"
 repository: mathphreak/mathphreak.github.io
-gems:
+plugins:
   - jekyll-feed
   - jekyll-coffeescript
   - jekyll-paginate
